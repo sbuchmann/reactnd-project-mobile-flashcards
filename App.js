@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
-import StatusBar from './components/StatusBar';
+import MyStatusBar from './components/MyStatusBar';
 import Navigator from './components/Navigator';
 import {setLocalNotification} from './utils/helpers';
 
@@ -18,7 +18,7 @@ export default class App extends React.Component {
         return (
             <Provider store={createStore(reducer, middleware)}>
                 <View style={{flex: 1}}>
-                    <StatusBar/>
+                    <MyStatusBar/>
                     <Navigator/>
                 </View>
             </Provider>

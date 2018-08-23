@@ -2,7 +2,7 @@ import React from 'react';
 import {Constants} from 'expo';
 import {View, StatusBar} from 'react-native';
 
-const StatusBar = (props) => {
+const MyStatusBar = (props) => {
     return (
         <View style={{backgroundColor: 'black', height: Constants.statusBarHeight}}>
             <StatusBar translucent backgroundColor='white' {...props} />
@@ -10,4 +10,4 @@ const StatusBar = (props) => {
     )
 };
 
-export default StatusBar;
+export default MyStatusBar;
